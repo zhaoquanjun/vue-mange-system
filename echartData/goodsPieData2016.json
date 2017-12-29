@@ -1,0 +1,33 @@
+{
+  "code": 200,
+  "data": {
+    "title": {
+      "text": "商品年盈利占比",
+      "subtext": "纯属瞎扯"
+    },
+    "tooltip": {
+      "trigger": "item",
+      "formatter": "{a} <br/>{b} : {c} ({d}%)"
+    },
+    "legend": {
+      "orient": "vertical",
+      "x": "right",
+      "data": ["苹果", "梨", "香蕉", "草莓", "车厘子"]
+    },
+    "calculable": true,
+    "series": [
+      {
+        "name": "收益占比",
+        "type": "pie",
+        "radius": "55%",
+        "data": [
+          { "value": 550, "name": "苹果" },
+          { "value": 350, "name": "梨" },
+          { "value": 999, "name": "香蕉" },
+          { "value": 899, "name": "草莓" },
+          { "value": 1100, "name": "车厘子" }
+        ]
+      }
+    ]
+  }
+}
