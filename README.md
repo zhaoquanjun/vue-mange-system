@@ -11,7 +11,7 @@
 --src -> 源码;
 --src-components -> 组件;
 --src-components-common -> 通用组件;
---src-components-private -> 独立组件;
+--src-components-private -> 独立组件。
 --src-router -> 路由;
 --src-view -> 页面;
 --src-view-login -> 登录;
