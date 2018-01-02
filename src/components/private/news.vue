@@ -46,9 +46,9 @@ export default {
           path: "/shenyue_21_23?news1_02"
         },
         {
-          title: "月底之际，公司组织廉价内购为2017画上圆满句号",
-          desc: "内购",
-          path: "/news1_01_inner_buy"
+          title: "致我们单纯的小美好番外篇",
+          desc: "图文详情",
+          path: "/shenyueyue_fanwai?news1_01"
         }
       ],
       startShow: true

@@ -1,20 +1,19 @@
 <template>
     <div class="newsTemplate">
-        <div class="newsDetail" v-for="item in news1List" :key="item.title">
-            <h1 class="title">{{item.title}}</h1>
-            <small class="subDesc">{{item.subDesc}}</small>
-            <div class="newsContent">
-                <div class="contentItem" v-for="content in item.content" :key="content.id">
-                    <h3 class="crossHead">{{content.crossHead}}</h3>
-                    <div class="imgBox" v-if="content.img">
-                        <img :src="content.img" alt="">
-                        <p class="tip">图注：{{content.tip}}</p>
-                    </div>
-                    <div class="parh">{{content.p}}</div>
-                </div>
-            </div>         
-        </div>
-        
+      <div class="newsDetail" v-for="item in news1List" :key="item.title">
+          <h1 class="title">{{item.title}}</h1>
+          <small class="subDesc">{{item.subDesc}}</small>
+          <div class="newsContent">
+              <div class="contentItem" v-for="content in item.content" :key="content.id">
+                  <h3 class="crossHead">{{content.crossHead}}</h3>
+                  <div class="imgBox" v-if="content.img">
+                      <img :src="content.img" alt="">
+                      <p class="tip">图注：{{content.tip}}</p>
+                  </div>
+                  <div class="parh">{{content.p}}</div>
+              </div>
+          </div>         
+      </div>
     </div>
 </template>
 
@@ -70,13 +69,15 @@ export default {
   width: 100%;
   padding: 5px 0;
   text-align: center;
+  color: #aaa;
 }
 .contentItem .parh {
   /* float: left; */
   font-size: 15px;
   text-indent: 35px;
-  padding-top: 5px;
+  padding-top: 15px;
   line-height: 25px;
+  color: #333;
 }
 .imgBox {
   width: 50%;

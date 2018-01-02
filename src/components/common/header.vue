@@ -21,84 +21,85 @@
 </template>
 
 <script>
-    export default {
-        data(){
-            return {
-                systems:[
-                    {value:'保质期预警系统',label:'保质期预警系统', id:'exp_system'},
-                    {value:'拼团系统', label:'拼团系统', id:'pt_system'}
-                ],
-                name:''
-            }
-        },
-        methods: {
-            handleCommand(command) {
-                this.$router.push('/')
-            }
-        }
+export default {
+  data() {
+    return {
+      systems: [
+        { value: "保质期预警系统", label: "保质期预警系统", id: "exp_system" },
+        { value: "拼团系统", label: "拼团系统", id: "pt_system" }
+      ],
+      name: ""
+    };
+  },
+  methods: {
+    handleCommand(command) {
+      this.$router.push("/");
     }
+  }
+};
 </script>
 
 <style scoped>
-    .header{
-        width: 100%;
-        height: 50px;
-    }
-    .left-logo{
-        height: 100%;
-        float: left;
-    }
-    .sLogo{
-        display: block;
-        float: left;
-        width: 60px;
-        height: 40px;
-        padding-top: 5px;
-        padding-left: 30px;
-    }
-    .sLogo img{
-        width: 100%;
-        height: 100%;
-    }
-    .sName{
-        display: block;
-        float: left;
-        height: 50px;
-        line-height: 50px;
-        font-size: 16px;
-        padding-left: 15px;
-        font-weight: 600;
-        color: #fff;
-    }
-    .user-info{
-        float: left;
-    }
-    .user-avator,.wel-word{
-        display: block;
-        float: left;
-        color: #fff;
-    }
-    .user-avator{
-        margin-left: 50px;
-        width: 30px;
-        height: 30px;
-        padding: 10px;
-    }
-    .user-avator img{
-        width: 100%;
-        height: 100%;
-    }
-    .wel-word{
-        height: 50px;
-        line-height: 50px;
-        font-size: 13px;
-    }
-    .system-sel{
-        float: right;
-        padding: 5px;
-        padding-right: 30px;
-    }
-    .el-drop-item{
-        width: 80px;
-    }
+.header {
+  width: 100%;
+  height: 50px;
+}
+.left-logo {
+  height: 100%;
+  float: left;
+}
+.sLogo {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 40px;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+.sLogo img {
+  width: 100%;
+  height: 100%;
+}
+.sName {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  padding-left: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+.user-info {
+  float: left;
+}
+.user-avator,
+.wel-word {
+  display: block;
+  float: left;
+  color: #fff;
+}
+.user-avator {
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+.user-avator img {
+  width: 100%;
+  height: 100%;
+}
+.wel-word {
+  height: 50px;
+  line-height: 50px;
+  font-size: 13px;
+}
+.system-sel {
+  float: right;
+  padding: 5px;
+  padding-right: 30px;
+}
+.el-drop-item {
+  width: 80px;
+}
 </style>
