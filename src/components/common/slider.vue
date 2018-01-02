@@ -33,7 +33,11 @@
             </el-menu-item>
             <el-menu-item index="/percent">
                 <i class="el-icon-sold-out"></i>
-                <span slot="title">商品销售数据   </span>
+                <span slot="title">商品销售数据</span>
+            </el-menu-item>
+            <el-menu-item index="/news">
+                <i class="el-icon-news"></i>
+                <span slot="title">公司新事件</span>
             </el-menu-item>
         </el-menu>
   </el-col>

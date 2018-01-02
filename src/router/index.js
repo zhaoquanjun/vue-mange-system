@@ -29,6 +29,16 @@ export default new Router({
           path: "/percent",
           component: resolve =>
             require(["../components/private/salePercent.vue"], resolve)
+        },
+        {
+          path: "/news",
+          component: resolve =>
+            require(["../components/private/news.vue"], resolve)
+        },
+        {
+          path: "/newsDetail/:newsname",
+          component: resolve =>
+            require(["../components/private/newsTemplate.vue"], resolve)
         }
       ]
     }
