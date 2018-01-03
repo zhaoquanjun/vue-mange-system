@@ -1,6 +1,7 @@
 <template>
     <div class="newsTemplate">
-      <div class="newsDetail" v-for="item in news1List" :key="item.title">
+      <h3 v-if="hasContent">抱歉，暂时没有详细内容，稍后会尽快补上，敬请期待</h3>
+      <div v-else class="newsDetail" v-for="item in news1List" :key="item.title">
           <h1 class="title">{{item.title}}</h1>
           <small class="subDesc">{{item.subDesc}}</small>
           <div class="newsContent">
@@ -21,7 +22,8 @@
 export default {
   data() {
     return {
-      news1List: []
+      news1List: [],
+      hasContent: true
     };
   },
   created() {
@@ -38,6 +40,7 @@ export default {
       this.$axios
         .get(url)
         .then(res => {
+          this.hasContent = !this.getContentData(res.data);
           if (res.data.code == 200) {
             this.news1List = res.data.data;
           } else {
@@ -47,6 +50,13 @@ export default {
         .catch(err => {
           console.log(err);
         });
+    },
+    getContentData(data) {
+      if (data) {
+        return "ok";
+      } else {
+        return "";
+      }
     }
   }
 };

@@ -7,6 +7,7 @@
                 <router-view></router-view>
             </transition>
         </div>
+        <s-back-top></s-back-top>
     </div>
 </template>
 
@@ -14,6 +15,7 @@
 <script>
 import sHeader from "../components/common/header.vue";
 import sSlider from "../components/common/slider.vue";
+import sBackTop from "../components/common/backTop";
 
 export default {
   data() {
@@ -21,7 +23,8 @@ export default {
   },
   components: {
     sHeader,
-    sSlider
+    sSlider,
+    sBackTop
   }
 };
 </script>
