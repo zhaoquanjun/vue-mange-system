@@ -23,19 +23,22 @@ export default {
   data() {
     return {
       news1List: [],
-      hasContent: true
+      hasContent: true,
+      scrollDistance: 0
     };
   },
   created() {
     this.getQueryUrl();
   },
   methods: {
+    // 根据页面url -> query 获取对应的数据
     getQueryUrl() {
       let localHref = window.location.href;
       let urlQuery = localHref.slice(localHref.lastIndexOf("?") + 1);
       let url = "../../../newsData/" + urlQuery + ".json";
       this.getNewsData(url);
     },
+    // 获取页面数据
     getNewsData(url) {
       this.$axios
         .get(url)
@@ -51,6 +54,7 @@ export default {
           console.log(err);
         });
     },
+    // 判断card -> children 是否有实际内容
     getContentData(data) {
       if (data) {
         return "ok";
