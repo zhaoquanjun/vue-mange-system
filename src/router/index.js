@@ -39,6 +39,11 @@ export default new Router({
           path: "/newsDetail/:newsname",
           component: resolve =>
             require(["../components/private/newsTemplate.vue"], resolve)
+        },
+        {
+          path: "/myOwn",
+          component: resolve =>
+            require(["../components/private/myOwn.vue"], resolve)
         }
       ]
     }

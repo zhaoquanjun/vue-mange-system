@@ -14,7 +14,7 @@
         </el-card>
         <el-card class="box-card">
             <div slot="header">
-                <span class="cardTitle">告别2017，面对2018，你有什么想法~</span>
+                <span class="cardTitle">告别2017，面对2018，你有什么 idea ~</span>
                 <el-button style="float:right;padding:3px" type="text" @click="submit">操作按钮</el-button>
                 <i class="el-icon-star-off" v-if="star2Show" @click="news2Star" style="display:block;float:right;padding-right:20px;padding-top:2px"></i>
                 <i class="el-icon-star-on" v-else  @click="news2Star" style="display:block;float:right;padding-right:20px;padding-top:2px"></i>
