@@ -1,6 +1,6 @@
 ### 简介
 
-> 基于 vue + vue-router + axios + echarts + element ui
+> 基于 vue + vue-router + webpack + axios + echarts + element ui
 > 搭建得简易后台利用 vue-cli 脚手架快速简洁的创捷项目结构;
 > 由于不会后台语言，所以接口都是本地得静态 Json 文档,也因此很多功能并没能实现
 
@@ -23,6 +23,7 @@
 --static -> 静态文件
 
 --tableData -> json 数据
+--newsData  -> json 数据
 --echartData -> json 数据
 ```
 
