@@ -23,11 +23,11 @@
 --src-view-home -> 主内容页面
 --src-main.js -> 入口文件
 --src-App.js -> 渲染展示
---src-store -> vuex.store
+--src-store -> vuex.store（复杂应用选择）
 --src-store-index -> store出口
 --src-store-dialog.js -> dialog模块
 --src-store-login.js -> 登录模块
---src-bus -> 中央总线程
+--src-bus -> 中央总线程(简单应用首选)
 
 --static -> 静态文件
 
