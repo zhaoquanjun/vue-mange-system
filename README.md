@@ -31,7 +31,6 @@
 
 --static -> 静态文件
 
-
 --tableData -> json 数据
 --newsData  -> json 数据
 --echartData -> json 数据
