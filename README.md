@@ -27,8 +27,10 @@
 --src-store-index -> store出口
 --src-store-dialog.js -> dialog模块
 --src-store-login.js -> 登录模块
+--src-bus -> 中央总线程
 
 --static -> 静态文件
+
 
 --tableData -> json 数据
 --newsData  -> json 数据
