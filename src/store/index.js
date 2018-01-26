@@ -5,9 +5,9 @@ import login_store from "../store/login";
 
 Vue.use(Vuex);
 
-export default new Vuex.store({
-  modules: {
-    dialog: dialog_store,
-    login: login_store
-  }
-});
+// export default new Vuex.store({
+//   modules: {
+//     dialog: dialog_store,
+//     login: login_store
+//   }
+// });
